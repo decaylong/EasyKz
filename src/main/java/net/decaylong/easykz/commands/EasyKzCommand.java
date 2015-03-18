@@ -1,3 +1,19 @@
+/**
+ * Copyright (C) 2015 DecayLong.  All rights reserved.
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation,  version 3.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package net.decaylong.easykz.commands;
 
 import net.decaylong.easykz.EasyKz;
@@ -38,7 +54,7 @@ public class EasyKzCommand {
                     } else if (args.length > 1) {
                         //显示或隐藏指定玩家
                         for (int i = 1; i <= args.length - 1; ++i) {
-                            Player target = ((Player) sender).getServer().getPlayerExact(args[i]);
+                            Player target = sender.getServer().getPlayerExact(args[i]);
                             if (target == null) {
                                 sender.sendMessage("[EasyKz]: Player " + args[i] + " is not online!");
                                 continue;
