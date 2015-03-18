@@ -1,0 +1,14 @@
+name: EasyKz
+main: net.decaylong.easykz.EasyKz
+version: 0.1
+author: DecayLong
+description:
+    This is a Kz(parkour) auxiliary for player who playing parkour maps.
+
+commands:
+    easykz:
+        description: Turn Kz auxiliary on or off for current player.
+        aliases: [ezkz, kz, ekz, parkour]
+        usage: |
+             /<command> on/off - Switch plugin status for current player.
+             /<command> show/hide [name1 name2 ...] - Show/Hide specify or all players.
